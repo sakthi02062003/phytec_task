@@ -68,3 +68,11 @@
         Command-line interface for message input/output.
 
         Multithreaded server to support multiple client connections concurrently.
+        gcc udp_chat.c -o chat -pthread
+
+# Terminal 1 - Start Server
+./chat udp_server
+
+# Terminal 2 - Start Client (use 127.0.0.1 for localhost)
+./chat udp_client 127.0.0.1
+
